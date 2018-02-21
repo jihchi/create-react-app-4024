@@ -4,7 +4,7 @@ https://github.com/facebook/create-react-app/pull/4024
 
 ![Preview](src/before.gif)
 
-## Reproduable steps
+## Re-produceable steps
 
 ```
 git clone https://github.com/jihchi/create-react-app-4024.git

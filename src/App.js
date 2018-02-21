@@ -2,10 +2,31 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const crash = () => {
+  const d = [[[null]]];
+
+  return d.reduce((acc, items) => {
+    const next = items.map(item => {
+      const next2 = item.map(v => {
+        const next3 = v.map(vv => {
+          const next4 = vv + 1;
+
+          return next4;
+        });
+        return next3;
+      });
+
+      return next2;
+    });
+
+    return acc.concat(next);
+  }, []);
+};
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App" onClick={crash}>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
